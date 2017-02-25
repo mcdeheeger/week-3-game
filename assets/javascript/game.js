@@ -25,7 +25,7 @@ function startGame(){
 	
 	var wrongGuesses = [];
 	var numGuesses = 9;
-	var numBlanks = [];
+	var blanksAndSuccesses = [];
 
 	
 	
@@ -43,11 +43,11 @@ function startGame(){
 	  blanksAndSuccesses.push("_");
 	}
 	
-	
+	document.getElementById("word-blank").innerHTML = blanksAndSuccesses.join(" ");
 	console.log("blanks and successess", blanksAndSuccesses);
 	document.getElementById("guesses-left").innerHTML = numGuesses;
 	document.getElementById('wrong-guesses').innerHTML = wrongGuesses.join(" ");
-	document.getElementById("word-blank").innerHTML = blanksAndSuccesses.join(" ");
+
 }
 
 
